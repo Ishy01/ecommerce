@@ -10,6 +10,9 @@ export default {
       colors: {
         primary: "#fea928",
         secondary: "#ed8900",
+        gray: {
+          800: "#2d3748", // Dark equivalent for primary/40
+        },
       },
       container: {
         center: true,
