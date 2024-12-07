@@ -4,10 +4,6 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-<<<<<<< HEAD
-  theme: {
-    extend: {},
-=======
   darkMode: "class",
   theme: {
     extend: {
@@ -23,7 +19,6 @@ export default {
         }
       }
     },
->>>>>>> 70db6f06a0d562840d28de11a17079978ec8d144
   },
   plugins: [],
 }
