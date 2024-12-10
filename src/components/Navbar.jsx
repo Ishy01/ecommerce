@@ -4,6 +4,34 @@ import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from "./DarkMode";
 
+const Menu = [
+  {
+    id: 1,
+    name: "Home",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "Top Rated",
+    link: "/#services",
+  },
+  {
+    id: 3,
+    name: "Kids Wear",
+    link: "/#",
+  },
+  {
+    id: 4,
+    name: "Mens Wear",
+    link: "/#",
+  },
+  {
+    id: 5,
+    name: "Electronics",
+    link: "/#",
+  },
+]
+
 const Navbar = () => {
   return (
     <div className="shadow-md bg-white dark:border-gray-900 dark:text-white duration-200 relative z-40 ">
@@ -40,7 +68,17 @@ const Navbar = () => {
         </div>
       </div>
       {/* lower Navbar */}
-      <div></div>
+      <div>
+        <ul className="">
+          {
+            Menu.map((data) => (
+              <li key={data.id}>
+                <a href={data.link}>{data.name}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
   );
 };
